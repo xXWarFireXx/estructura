@@ -8,8 +8,6 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  clone:
-    branches: [ master ]
 
 jobs:
   build:
@@ -26,4 +24,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Update dependencies
+      run: |
         pip-upgrade --novenv -y
+    - name: Save dependencies
+      run: |
+        if [ -f requirements.txt ]; then pip freeze > .\requirements.txt; fi
