@@ -1,3 +1,5 @@
 # Carpeta de trabajo
 env
 
+# Workspace
+*.*workspace
