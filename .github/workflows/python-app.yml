@@ -28,4 +28,5 @@ jobs:
       run: |
         pip-upgrade --novenv -y
     - name: Run proyect main
+      run: |
         if [ -f src\main.py ]; then py .\src\main.py; fi
