@@ -27,6 +27,5 @@ jobs:
     - name: Update dependencies
       run: |
         pip-upgrade --novenv -y
-    - name: Save dependencies
-      run: |
-        if [ -f requirements.txt ]; then pip freeze > .\requirements.txt; fi
+    - name: Run proyect main
+        if [ -f src\main.py ]; then py .\src\main.py; fi
