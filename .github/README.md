@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/xXWarFireXx/estructura">
-    <img src="src/readme/images/logo.png" alt="Logo" width="80" height="80">
+    <img src=".github/img/logo-ejemplo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Título del proyecto</h3>
